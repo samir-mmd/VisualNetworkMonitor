@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>vnmicon.ico</ApplicationIcon>
+    <AssemblyName>Visual Network Monitor</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\edit.png" />
+    <None Remove="Views\vnmlogo.png" />
+    <None Remove="Views\wait.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.3.3" />
+    <PackageReference Include="MailKit" Version="2.10.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.19" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\edit.png" />
+    <Resource Include="Resources\vnmlogo.png" />
+  </ItemGroup>
+
+</Project>

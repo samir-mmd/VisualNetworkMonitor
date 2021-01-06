@@ -1,0 +1,249 @@
+﻿<UserControl x:Class="VNM2020.Views.FirstScreenView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:local="clr-namespace:VNM2020.Views"
+             xmlns:model="clr-namespace:VNM2020.Models"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:ser="clr-namespace:VNM2020.Services"             
+             mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="720">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="../Resources/DataTemplates.xaml"/>
+    </UserControl.Resources>
+
+    <Grid>        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="280"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>           
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>            
+        </Grid.RowDefinitions>
+        <materialDesign:Card Grid.Row="1">
+            <ScrollViewer>
+                <StackPanel>
+                    <TreeView  x:Name="mainTree" HorizontalContentAlignment="Stretch"
+                       ItemsSource="{Binding CategoryView}" ItemTemplate="{StaticResource CategoryListTemplate}" ItemContainerStyle="{StaticResource CategoryListItem}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="SelectedItemChanged" >
+                                <i:InvokeCommandAction  Command="{Binding MainTreeSelectionCommand}" CommandParameter="{Binding ElementName=mainTree}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </TreeView>
+                    <Button Margin="2" Content="+" Command="{Binding AddCategoryDialogCommand}" Background="#19000000" ToolTip="Add New Category"/>
+                </StackPanel>
+            </ScrollViewer>
+        </materialDesign:Card>
+        <DockPanel  Grid.Row="2">
+            <Button Content="≡" Command="{Binding OpenSettingsCommand}" Padding="4,-1,4,0"  Background="Transparent"  Height="27" FontSize="20" ToolTip="Settings"/>
+            <Button Content="" FontFamily="webdings" Command="{Binding OpenLogWindowCommand}" Padding="4,0"  Background="Transparent"  Height="27" ToolTip="Log"/>          
+            <ToggleButton IsChecked="{Binding Okbox}"  VerticalAlignment="Bottom"     Cursor="Hand"   Background="{StaticResource OkStatusColor}">
+                <ToggleButton.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>                      
+                    </TransformGroup>
+                </ToggleButton.RenderTransform>
+            </ToggleButton>
+            <ToggleButton IsChecked="{Binding Holdbox}" VerticalAlignment="Bottom"  Cursor="Hand"  Background="{StaticResource HoldStatusColor}">
+                <ToggleButton.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                    </TransformGroup>
+                </ToggleButton.RenderTransform>
+            </ToggleButton>
+            <ToggleButton IsChecked="{Binding Pausebox}"  VerticalAlignment="Bottom"  Cursor="Hand"   Background="{StaticResource PausedStatusColor}">
+                <ToggleButton.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                    </TransformGroup>
+                </ToggleButton.RenderTransform>
+            </ToggleButton>
+            <ToggleButton IsChecked="{Binding Errorbox}" VerticalAlignment="Bottom"   Cursor="Hand"  Background="{StaticResource ErrorStatusColor}">
+                <ToggleButton.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                    </TransformGroup>
+                </ToggleButton.RenderTransform>
+            </ToggleButton>
+            <TextBox Text="{Binding Search, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="2,1" materialDesign:HintAssist.Hint="Search" materialDesign:HintAssist.HintOpacity="0.3" materialDesign:HintAssist.IsFloating="False" VerticalAlignment="Bottom">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="TextChanged">
+                        <i:InvokeCommandAction Command="{Binding SearchCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </TextBox>
+        </DockPanel>
+        <Expander ExpandDirection="Right" Grid.Column="1" Grid.RowSpan="3" Background="{StaticResource DarkGray100}" Margin="2">
+            <Grid Width="410">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+
+                </Grid.RowDefinitions>
+
+                <DockPanel HorizontalAlignment="Stretch">
+                    <TextBox Width="200" VerticalAlignment="Bottom"   Text="{Binding Selected.Name}" Margin="5" materialDesign:HintAssist.Hint="Host Name"/>
+                    <Button  Margin="5" Content="Try Get DNS Name" Command="{Binding GetHostDNSNameCommand}" VerticalAlignment="Bottom"/>
+                </DockPanel>
+
+                <DockPanel  Grid.Row="1">
+                    <TextBox  Width="200" VerticalAlignment="Center"  Text="{Binding Selected.Address}" Margin="5" materialDesign:HintAssist.Hint="Address"/>
+                    <TextBox  Margin="5" Text="{Binding Selected.Mac}"  VerticalAlignment="Bottom" Foreground="White" materialDesign:HintAssist.Hint="Physical"/>
+                </DockPanel>
+
+                <DockPanel Grid.Row="2">
+                    <TextBox  Width="200" VerticalAlignment="Center"  Text="{Binding Selected.MailAddress}" Margin="5" materialDesign:HintAssist.Hint="Notify To (Empty if Default)"/>
+                    <TextBlock  Margin="5,0,0,5" Text="Enable Notifications" HorizontalAlignment="Left" VerticalAlignment="Bottom" Foreground="White"/>
+                    <ToggleButton  IsChecked="{Binding Selected.Mailable}" Margin="5,5" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                </DockPanel>
+
+                <TextBox Grid.Row="3" VerticalAlignment="Center"  Text="{Binding Selected.Notes}" Margin="5" materialDesign:HintAssist.Hint="Notes"/>
+
+                <TextBlock Grid.Row="4" Margin="5" Text="Update Interval" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+                <DockPanel Grid.Row="5" >
+                    <TextBlock Margin="5" Text="{Binding Selected.Seconds}" Width="20" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="White"/>
+                    <Slider VerticalAlignment="Bottom" Maximum="300" Minimum="0" Value="{Binding Selected.Seconds}" Margin="5" IsSnapToTickEnabled="True" TickFrequency="10"/>
+                </DockPanel>
+
+
+                <TextBlock Grid.Row="6" Margin="5" Text="Category" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+                <DockPanel  Grid.Row="7">
+                    <Button Content="Set" HorizontalAlignment="Right" DockPanel.Dock="Right" Command="{Binding SetCategoryCommand}" Margin="5"/>
+                    <ComboBox  HorizontalContentAlignment="Stretch" ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedHostCategory}" DisplayMemberPath="Name" Margin="5" Foreground="White"/>
+                </DockPanel>
+
+                <!--#region ActionMap -->
+                <ScrollViewer Grid.Row="8" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden" Margin="0,2,5,2">
+                    <ItemsControl  Grid.Row="8"  ItemsSource="{Binding Selected.Actions}" 
+                                              RenderTransformOrigin="0.5,0.5" 
+                                              FlowDirection="RightToLeft">
+                        <ItemsControl.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleY="-1" ScaleX="1"/>
+                                <SkewTransform AngleY="0" AngleX="0"/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </ItemsControl.RenderTransform>
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <Canvas Width="{Binding Selected.Actions.Count}" MinWidth="200" ClipToBounds="True" Height="150"  Background="#FF151515" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                    <Canvas.LayoutTransform>
+                                        <ScaleTransform ScaleX="2"  ScaleY="2"/>
+                                    </Canvas.LayoutTransform>
+                                </Canvas>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid HorizontalAlignment="Center" >
+                                    <Rectangle Height="150" Width="1" VerticalAlignment="Top" HorizontalAlignment="Right">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="MouseEnter" >
+                                                <i:InvokeCommandAction  Command="{Binding DataContext.ShowTipCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}" CommandParameter="{Binding ToolTip}"/>
+                                            </i:EventTrigger>
+                                            <i:EventTrigger EventName="MouseLeave" >
+                                                <i:InvokeCommandAction  Command="{Binding DataContext.ClearTipCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}"/>
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                        <Rectangle.Style>
+                                            <Style TargetType="{x:Type Rectangle}">
+                                                <Setter Property="Fill" Value="{StaticResource HoldStatusColor}"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Status}" Value="Success">
+                                                        <Setter Property="Fill" Value="{StaticResource OkStatusColor}"/>
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding Status}" Value="TimedOut">
+                                                        <Setter Property="Fill" Value="{StaticResource ErrorStatusColor}"/>
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding Status}" Value="Network Error">
+                                                        <Setter Property="Fill" Value="{StaticResource NetworkErrorStatusColor}"/>
+                                                    </DataTrigger>
+                                                    <Trigger Property="IsMouseOver" Value="False">
+                                                        <Setter Property="Rectangle.Opacity" Value="0"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Rectangle.Opacity" Value="0.3"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+
+                                        </Rectangle.Style>
+                                    </Rectangle>
+                                    <Line StrokeThickness="0.4"  StrokeEndLineCap="Triangle" StrokeLineJoin="Round" X1="{Binding Count}" X2="{Binding PrevCount}" Y1="{Binding Reply}" Y2="{Binding PrevReply}" ToolTip="{Binding ToolTip}">
+                                        <Line.Style>
+                                            <Style TargetType="{x:Type Line}">
+                                                <Setter Property="Stroke" Value="{StaticResource HoldStatusColor}"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Status}" Value="Success">
+                                                        <Setter Property="Stroke" Value="{StaticResource OkStatusColor}"/>
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding Status}" Value="TimedOut">
+                                                        <Setter Property="Stroke" Value="{StaticResource ErrorStatusColor}"/>
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding Status}" Value="Network Error">
+                                                        <Setter Property="Stroke" Value="{StaticResource NetworkErrorStatusColor}"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Line.Style>
+                                    </Line>
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+                
+                <TextBlock Margin="10" Foreground="LightGray" Text="{Binding TipBox}" Grid.Row="8" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <!--#endregion-->
+
+
+                <ToolBarPanel Orientation="Horizontal" Grid.Row="9" Margin="2">
+                    <Button Margin="2" Content="Remove" Padding="6"  Command="{Binding RemoveHostCommand}" Style="{StaticResource  AttentionButtonStyle}"/>
+                    <Button Margin="2" Content="Reset Parent" Padding="6" Command="{Binding ResetFatherCommand}"/>
+                    <Button Margin="2" Content="Reset Position" Padding="6" Command="{Binding ResetPositionCommand}" />
+                    <Button Margin="2" Content="Manual Ping" Padding="6" Command="{Binding PingHostCommand}"/>
+                </ToolBarPanel>
+
+            </Grid>
+        </Expander>
+        <ScrollViewer Grid.Column="2" Grid.RowSpan="3"  Background="Transparent"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" x:Name="MapViewer"  PreviewMouseWheel="MapViewer_PreviewMouseWheel">
+            <Canvas ClipToBounds="True" Name="MapCanvas" ser:DragEngine.Drag="True" Height="{Binding ActualHeight, ElementName=MainMap}" Width="{Binding ActualWidth, ElementName=MainMap}" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <Canvas.LayoutTransform>
+                    <ScaleTransform ScaleX="{Binding Mapzoom}"  ScaleY="{Binding Mapzoom}"/>
+                </Canvas.LayoutTransform>
+                <Image Width="10000" x:Name="MainMap" Source="{Binding MapImage}"  HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="{Binding Mapopacity}"/>
+                <ItemsControl  ItemsSource="{Binding AllHosts}" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ItemTemplate="{DynamicResource MapItemsTemplate}"/>
+            </Canvas>
+        </ScrollViewer>
+        <Grid Grid.ColumnSpan="3" Grid.RowSpan="4" Background="#66000000" Visibility="{Binding WaitingVisibility}">
+            <Image Width="200" Source="/Resources/vnmlogo.png" >
+                <Image.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0.2" To="1" BeginTime="0:0:0" Duration="0:0:.450" AutoReverse="True" RepeatBehavior="Forever"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Image.Triggers>
+            </Image>
+        </Grid>
+        
+    </Grid>
+</UserControl>

@@ -1,0 +1,20 @@
+﻿Visual Network Monitor
+
+
+winexe
+C#
+.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\
+VNM2020
+none
+false
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+C:\Users\SamirMammadovWS\Desktop\VNM2020\App.xaml
+101105873473
+
+352008425905
+2261712605431
+Resources\DataTemplates.xaml;Views\AddCategoryView.xaml;Views\AddHostView.xaml;Views\DialogWindow.xaml;Views\EditCategoryView.xaml;Views\FirstScreenView.xaml;Views\LogScreenView.xaml;Views\LogScreenWindow.xaml;Views\MainWindow.xaml;Views\SettingsView.xaml;
+
+False
+

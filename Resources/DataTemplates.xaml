@@ -1,0 +1,435 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                    
+                    xmlns:vm="clr-namespace:VNM2020.ViewModels" 
+                    xmlns:v="clr-namespace:VNM2020.Views"
+                    xmlns:s="clr-namespace:VNM2020.Services"
+                    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"                     
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Red.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <DataTemplate DataType="{x:Type vm:FirstScreenViewModel}">
+        <v:FirstScreenView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddHostViewModel}">
+        <v:AddHostView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddCategoryViewModel}">
+        <v:AddCategoryView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:EditCategoryViewModel}">
+        <v:EditCategoryView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:SettingsViewModel}">
+        <v:SettingsView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:LogScreenViewModel}">
+        <v:LogScreenView/>
+    </DataTemplate>  
+
+    <SolidColorBrush x:Key="BorderLightBlueColor" Color="#FF4E8FC5"/>
+    <SolidColorBrush x:Key="DarkGray100" Color="#FF1F1F1F"/>
+    <SolidColorBrush x:Key="MiddleGray" Color="#FF2C2C2C"/>
+    <SolidColorBrush x:Key="CoreGray100" Color="#FF494949"/>
+    <SolidColorBrush x:Key="CoreGray50" Color="#7F494949"/>
+    <SolidColorBrush x:Key="CategoryColor" Color="#FF252525"/>
+    <SolidColorBrush x:Key="OkStatusColor" Color="#FF71FB71"/>
+    <SolidColorBrush x:Key="HoldStatusColor" Color="#FFFF8735"/>
+    <SolidColorBrush x:Key="PausedStatusColor" Color="#FFF8FF77"/>
+    <SolidColorBrush x:Key="ErrorStatusColor" Color="#FFFF2525"/>
+    <SolidColorBrush x:Key="NewStatusColor" Color="#FF6AEFF5"/>
+    <SolidColorBrush x:Key="NetworkErrorStatusColor" Color="#FF5B77FB"/>
+    <SolidColorBrush x:Key="DoneLogColor" Color="#FF1D4B47"/>
+    <SolidColorBrush x:Key="ExceptionLogColor" Color="#FF633F1B"/>
+    <SolidColorBrush x:Key="OnlineLogColor" Color="#FF1D851D"/>
+    <SolidColorBrush x:Key="OfflineLogColor" Color="#FF701D1D"/>
+
+    <Style TargetType="{x:Type DatePicker}" BasedOn="{StaticResource {x:Type DatePicker}}">
+        <Style.Resources>
+            <Style TargetType="DatePickerTextBox" >
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Foreground" Value="{StaticResource OkStatusColor}"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+                <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type DatePickerTextBox}" >
+                            <Grid>
+                                <Grid.Resources>
+                                    <SolidColorBrush x:Key="WatermarkBrush" Color="#FFAAAAAA"/>
+                                </Grid.Resources>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualStateGroup.Transitions>
+                                            <VisualTransition GeneratedDuration="0"/>
+                                            <VisualTransition GeneratedDuration="0:0:0.1" To="MouseOver"/>
+                                        </VisualStateGroup.Transitions>
+                                        <VisualState x:Name="Normal"/>
+                                        <VisualState x:Name="MouseOver">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="Red" Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="ContentElement"/>
+                                                <ColorAnimation Duration="0" To="Red" Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="watermark_decorator"/>
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="WatermarkStates">
+                                        <VisualStateGroup.Transitions>
+                                            <VisualTransition GeneratedDuration="0"/>
+                                        </VisualStateGroup.Transitions>
+                                        <VisualState x:Name="Unwatermarked"/>
+                                        <VisualState x:Name="Watermarked">
+                                            <Storyboard>
+                                                <DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="ContentElement"/>
+                                                <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="PART_Watermark"/>
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="FocusStates">
+                                        <VisualStateGroup.Transitions>
+                                            <VisualTransition GeneratedDuration="0"/>
+                                        </VisualStateGroup.Transitions>
+                                        <VisualState x:Name="Unfocused"/>
+                                        <VisualState x:Name="Focused">
+                                            <Storyboard>
+                                                <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisual"/>
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="1" Opacity="1" Padding="{TemplateBinding Padding}">
+                                    <Grid x:Name="WatermarkContent" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                        <Border x:Name="ContentElement" BorderBrush="#FFFFFFFF" BorderThickness="1" Visibility="Hidden"/>
+                                        <Border x:Name="watermark_decorator" BorderBrush="#FFFFFFFF" BorderThickness="1" Visibility="Hidden">
+                                            <ContentControl x:Name="PART_Watermark" Focusable="False" IsHitTestVisible="False" Opacity="0" Padding="2"/>
+                                        </Border>
+                                        <ScrollViewer x:Name="PART_ContentHost" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="0" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                        <Border x:Name="FocusVisual" BorderBrush="#FF45D6FA" CornerRadius="1" IsHitTestVisible="False" Opacity="0"/>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Style.Resources>
+        <Setter Property="Margin" Value="2,0"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{StaticResource OkStatusColor}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>        
+    </Style>
+
+    <Style TargetType="{x:Type ToolTip}">
+        <Setter Property="Foreground" Value="{DynamicResource MaterialDesignPaper}" />
+        <Setter Property="Background" Value="{DynamicResource MaterialDesignToolTipBackground}" />
+        <Setter Property="Padding" Value="8" />
+        <Setter Property="Placement" Value="Mouse" />
+        <Setter Property="StaysOpen" Value="True" />
+        <Setter Property="ToolTipService.BetweenShowDelay" Value="0" />
+        <Setter Property="ToolTipService.InitialShowDelay" Value="0" />
+        <Setter Property="ToolTipService.ShowDuration" Value="5000" />
+        <Setter Property="CustomPopupPlacementCallback" Value="{x:Static materialDesign:ToolTipAssist.CustomPopupPlacementCallback}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToolTip}">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="2" Margin="{TemplateBinding Margin}" >
+                        <ContentPresenter x:Name="ContentPresenter"  
+                                          Margin="{TemplateBinding Padding}"
+                                          Content="{TemplateBinding ContentControl.Content}" ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}" ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}">
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="validationFailed">
+
+    </ControlTemplate>
+
+    <Style x:Key="RangeListItem" TargetType="{x:Type ListViewItem}">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Status}" Value="Error">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Status}" Value="New">
+                <Setter Property="Visibility" Value="Hidden"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <DataTemplate x:Key="RangeListTemplate" >
+        <materialDesign:Card UniformCornerRadius="3" Margin="3">
+            <StackPanel>
+                <TextBlock Margin="5,2" Text="{Binding Name,StringFormat=Name: {0}}" Style="{DynamicResource MaterialDesignBody2TextBlock}"/>
+                <TextBlock Margin="5,2" Text="{Binding Address,StringFormat=Address: {0}}" Style="{DynamicResource MaterialDesignBody2TextBlock}"/>
+            </StackPanel>
+        </materialDesign:Card>
+
+    </DataTemplate>
+
+    <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBox}">
+        <Setter Property="materialDesign:HintAssist.IsFloating" Value="True"/>
+        <Setter Property="materialDesign:HintAssist.FloatingScale" Value="1.1"/>
+        <Setter Property="Foreground" Value="#FFDADADA"/>
+        <Style.Triggers>
+            <Trigger Property="Validation.HasError" Value="True">
+                <Setter Property="ToolTip"
+                Value="{Binding RelativeSource={RelativeSource Self},
+                    Path=(Validation.Errors)[0].ErrorContent}" />
+                <Setter Property="Foreground" Value="Red" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="AttentionButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignFlatDarkBgButton}">
+        <Setter Property="Background" Value="{StaticResource CoreGray100}"/>
+        <Setter Property="Foreground" Value="#FFFD8181"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignFlatDarkBgButton}">
+        <Setter Property="Background" Value="{StaticResource CoreGray100}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+
+    <Style x:Key="MapRectangleStyle" TargetType="{x:Type Rectangle}">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Status}" Value="Ok">
+                <Setter Property="Fill" Value="{StaticResource OkStatusColor}"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Status}" Value="Hold">
+                <Setter Property="Fill" Value="{StaticResource HoldStatusColor}"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Status}" Value="Error">
+                <Setter Property="Fill" Value="{StaticResource ErrorStatusColor}"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Status}" Value="Paused">
+                <Setter Property="Fill" Value="{StaticResource PausedStatusColor}"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Status}" Value="Network Error">
+                <Setter Property="Fill" Value="{StaticResource NetworkErrorStatusColor}"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Status}" Value="New Host">
+                <Setter Property="Fill" Value="{StaticResource NewStatusColor}"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="CategoryListItem" TargetType="{x:Type TreeViewItem}" BasedOn="{StaticResource MaterialDesignTreeViewItem}">
+        <Setter Property="IsExpanded" Value="{Binding Expanded,Mode=TwoWay}">
+        </Setter>      
+        <Style.Triggers>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding Status}" Value="Ok" />
+                    <Condition Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, Path=DataContext.Okbox}" Value="False" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Visibility" Value="Collapsed" />
+            </MultiDataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding Status}" Value="Hold" />
+                    <Condition Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, Path=DataContext.Holdbox}" Value="False" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Visibility" Value="Collapsed" />
+            </MultiDataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding Status}" Value="Error" />
+                    <Condition Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, Path=DataContext.Errorbox}" Value="False" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Visibility" Value="Collapsed" />
+            </MultiDataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding Status}" Value="Paused" />
+                    <Condition Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, Path=DataContext.Pausebox}" Value="False" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Visibility" Value="Collapsed" />
+            </MultiDataTrigger>
+            <MultiDataTrigger>
+                <MultiDataTrigger.Conditions>
+                    <Condition Binding="{Binding Status}" Value="Network Error" />
+                    <Condition Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, Path=DataContext.Errorbox}" Value="False" />
+                </MultiDataTrigger.Conditions>
+                <Setter Property="Visibility" Value="Collapsed" />
+            </MultiDataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <HierarchicalDataTemplate x:Key="CategoryListTemplate" ItemsSource="{Binding HostsView}">
+        <Grid Margin="-7">          
+            <Grid.Background>
+                <ImageBrush ImageSource="{Binding Icon}" Stretch="UniformToFill" Opacity="{Binding IconOpacity}"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>               
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="{Binding Name}" VerticalAlignment="Center" Margin="8,0,0,0"/>
+            <TextBlock Grid.Column="1" Text="+" FontWeight="Bold" VerticalAlignment="Center">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseDown">
+                        <i:InvokeCommandAction Command="{Binding DataContext.AddHostDialogCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}"  CommandParameter="{Binding}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </TextBlock>
+            <Button  Grid.Column="2" Command="{Binding DataContext.EditCategoryCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}"  CommandParameter="{Binding}" Padding="7,0" Margin="20,0,5,0" VerticalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/edit.png" TileMode="None" Stretch="Uniform" />
+                </Button.Background>
+            </Button>            
+        </Grid>
+
+        <HierarchicalDataTemplate.ItemTemplate>
+            <DataTemplate>
+                <Grid Margin="-10,-7,0,-7" Background="{StaticResource MiddleGray}" Width="205"> 
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Margin="0,0,2,0" Grid.RowSpan="2" Style="{StaticResource MapRectangleStyle}"/>
+                    <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Margin="4,2,0,2" Text="{Binding Name}" ToolTip="Host Name" FontWeight="ExtraBold"/>
+                    <TextBlock Grid.Column="2" Grid.Row="1" Margin="4,2,4,2"  Text="{Binding Timecounter}"  TextAlignment="Right" ToolTip="Time Counter" Visibility="{Binding HostVisibility}" />
+                    <TextBlock Grid.Column="1" Margin="4,0" Grid.Row="1" Text="{Binding Address}"  TextAlignment="Left" ToolTip="Host Address" Visibility="{Binding HostVisibility}" />
+                </Grid>
+            </DataTemplate>
+        </HierarchicalDataTemplate.ItemTemplate>
+    </HierarchicalDataTemplate>
+
+   
+
+    <DataTemplate x:Key="MapItemsTemplate">
+        <Canvas x:Name="HostCanvas" RenderTransformOrigin="0.5,0.5" ToolTip="{Binding Name}" s:DragEngine.Drag="True">           
+            <Line Name="ConnectionLine"
+                  X1="{Binding Colnumber}" X2="{Binding Father.Colnumber}" Y1="{Binding Rownumber}" Y2="{Binding Father.Rownumber}">
+                <Line.Style>
+                    <Style TargetType="{x:Type Line}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Father.Status}" Value="Ok">
+                                <Setter Property="Stroke" Value="{StaticResource OkStatusColor}"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Father.Status}" Value="Hold">
+                                <Setter Property="Stroke" Value="{StaticResource HoldStatusColor}"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Father.Status}" Value="Error">
+                                <Setter Property="Stroke" Value="{StaticResource ErrorStatusColor}"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Father.Status}" Value="Paused">
+                                <Setter Property="Stroke" Value="{StaticResource PausedStatusColor}"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding  Father.Status}" Value="Network Error">
+                                <Setter Property="Stroke" Value="{StaticResource NetworkErrorStatusColor}"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding  Father.Status}" Value="New Host">
+                                <Setter Property="Stroke" Value="{StaticResource NewStatusColor}"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Father.Selection}" Value="True">
+                                <Setter Property="StrokeThickness" Value="5"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Father.Selection}" Value="False">
+                                <Setter Property="StrokeThickness" Value="2"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Father.Selection}" Value="True">
+                                <Setter Property="Opacity" Value="100"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Father.Selection}" Value="False">
+                                <Setter Property="Opacity" Value="80"/>
+                            </DataTrigger>
+
+                        </Style.Triggers>
+                    </Style>
+                </Line.Style>
+            </Line>
+
+            <Grid Canvas.Left="{Binding Colnumber}" Canvas.Top="{Binding Rownumber}" RenderTransformOrigin="0,0" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseDown">
+                        <i:InvokeCommandAction Command="{Binding DataContext.Selectfrommap, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}"  CommandParameter="{Binding}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="{Binding Scale}" ScaleY="{Binding Scale}"/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Grid.Triggers>
+                    <EventTrigger RoutedEvent="MouseEnter">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetName="ConnectionLine" Storyboard.TargetProperty="(Line.Opacity)" 
+                                                 From="1" To="0" AutoReverse="True"  BeginTime="0:0:0" Duration="0:0:.125" RepeatBehavior="3x" />
+                            </Storyboard>
+
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Grid.Triggers>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>               
+                <Rectangle  Grid.Column="0" Width="10" Height="10" Style="{StaticResource MapRectangleStyle}" VerticalAlignment="Top"/>
+                <Border Grid.Column="1" >
+                    <Border.Style>
+                        <Style TargetType="{x:Type Border}">
+                            <Style.Triggers>                               
+                                <DataTrigger Binding="{Binding Selection}" Value="True">
+                                    <Setter Property="BorderBrush" Value="White"/>
+                                    <Setter Property="BorderThickness" Value="2"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Selection}" Value="False">
+                                    <Setter Property="BorderBrush" Value="{StaticResource DarkGray100}"/>
+                                    <Setter Property="BorderThickness" Value="1"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Father.Selection}" Value="True">
+                                    <Setter Property="BorderBrush" Value="{DynamicResource PrimaryHueMidBrush}"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel >
+                        <StackPanel.Style>
+                            <Style TargetType="{x:Type StackPanel}">
+                                <Style.Triggers>                                    
+                                    <DataTrigger Binding="{Binding Selection}" Value="True">
+                                        <Setter Property="Background" Value="{DynamicResource PrimaryHueMidBrush}"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Selection}" Value="False">
+                                        <Setter Property="Background" Value="{DynamicResource MiddleGray}"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </StackPanel.Style>
+                        <TextBlock Margin="5,2" Text="{Binding Name}" Foreground="White" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Address}" Margin="5,2" Foreground="White"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+        </Canvas>
+
+    </DataTemplate>
+
+    <DataTemplate x:Key="CategoryList">
+        <TextBlock Text="{Binding Name}"/>
+    </DataTemplate>
+    
+    
+</ResourceDictionary>
+

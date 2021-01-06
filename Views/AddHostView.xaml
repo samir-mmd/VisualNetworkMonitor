@@ -1,0 +1,128 @@
+﻿<UserControl x:Class="VNM2020.Views.AddHostView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:local="clr-namespace:VNM2020.Views"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+              xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             mc:Ignorable="d" Background="{DynamicResource MaterialDesignPaper}">
+    <UserControl.Resources>
+        <ResourceDictionary Source="../Resources/DataTemplates.xaml"/>
+    </UserControl.Resources>
+    <Controls:MetroAnimatedTabControl>
+        <Controls:MetroTabItem Header="Add Single" Foreground="WhiteSmoke">
+            <ToolBarPanel>
+                <ComboBox Width="150" Margin="5" ItemsSource="{Binding Categories}" SelectedItem="{Binding TargetCategory}" DisplayMemberPath="Name"/>
+                <TextBox Margin="5" Text="{Binding TargetHost.Name}" materialDesign:HintAssist.Hint="Name"/>
+                <TextBox Margin="5" Text="{Binding TargetHost.Address}" materialDesign:HintAssist.Hint="Address"/>
+                <Slider Margin="5" Value="{Binding TargetHost.Seconds}" Minimum="0" Maximum="300" IsSnapToTickEnabled="True" TickFrequency="10"/>
+                <Button Margin="5" Command="{Binding AddHostCommand}" Content="Add" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"/>
+            </ToolBarPanel>
+        </Controls:MetroTabItem>
+        <Controls:MetroTabItem Header="Add Range" Foreground="WhiteSmoke">
+            <ToolBarPanel>
+                <materialDesign:Card Margin="2" Grid.Row="2" VerticalAlignment="Stretch" VerticalContentAlignment="Center">
+                    <ToolBarPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <ToolBarOverflowPanel HorizontalAlignment="Stretch">
+                            <TextBox Margin="2" Width="28" MaxLength="3" HorizontalContentAlignment="Right"  Validation.ErrorTemplate="{StaticResource validationFailed}">
+                                <TextBox.Text>
+                                    <Binding Path="S1" UpdateSourceTrigger="PropertyChanged" >
+                                        <Binding.ValidationRules>
+                                            <DataErrorValidationRule/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <TextBox Margin="2" Width="28" MaxLength="3" HorizontalContentAlignment="Right"  Validation.ErrorTemplate="{StaticResource validationFailed}">
+                                <TextBox.Text>
+                                    <Binding Path="S2" UpdateSourceTrigger="PropertyChanged" >
+                                        <Binding.ValidationRules>
+                                            <DataErrorValidationRule/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <TextBox Margin="2" Width="28" MaxLength="3" HorizontalContentAlignment="Right"  Validation.ErrorTemplate="{StaticResource validationFailed}">
+                                <TextBox.Text>
+                                    <Binding Path="S3" UpdateSourceTrigger="PropertyChanged" >
+                                        <Binding.ValidationRules>
+                                            <DataErrorValidationRule/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <TextBox Margin="2" Width="28" MaxLength="3" HorizontalContentAlignment="Right"  Validation.ErrorTemplate="{StaticResource validationFailed}">
+                                <TextBox.Text>
+                                    <Binding Path="S4" UpdateSourceTrigger="PropertyChanged" >
+                                        <Binding.ValidationRules>
+                                            <DataErrorValidationRule/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <TextBlock Text=" > " VerticalAlignment="Center"/>
+                            <TextBox Margin="2" Width="28" MaxLength="3" HorizontalContentAlignment="Right"  Validation.ErrorTemplate="{StaticResource validationFailed}">
+                                <TextBox.Text>
+                                    <Binding Path="F1" UpdateSourceTrigger="PropertyChanged" >
+                                        <Binding.ValidationRules>
+                                            <DataErrorValidationRule/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <TextBox Margin="2" Width="28" MaxLength="3" HorizontalContentAlignment="Right"  Validation.ErrorTemplate="{StaticResource validationFailed}">
+                                <TextBox.Text>
+                                    <Binding Path="F2" UpdateSourceTrigger="PropertyChanged" >
+                                        <Binding.ValidationRules>
+                                            <DataErrorValidationRule/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <TextBox Margin="2" Width="28" MaxLength="3" HorizontalContentAlignment="Right"  Validation.ErrorTemplate="{StaticResource validationFailed}">
+                                <TextBox.Text>
+                                    <Binding Path="F3" UpdateSourceTrigger="PropertyChanged" >
+                                        <Binding.ValidationRules>
+                                            <DataErrorValidationRule/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                            <TextBox Margin="2" Width="28" MaxLength="3" HorizontalContentAlignment="Right"  Validation.ErrorTemplate="{StaticResource validationFailed}">
+                                <TextBox.Text>
+                                    <Binding Path="F4" UpdateSourceTrigger="PropertyChanged" >
+                                        <Binding.ValidationRules>
+                                            <DataErrorValidationRule/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
+                        </ToolBarOverflowPanel>
+                        <ToolBarOverflowPanel HorizontalAlignment="Stretch">
+                            <Button Margin="2" Content="Start"  Command="{Binding ScanRangeCommand}" />
+                            <Button Margin="2" Content="Stop"  Command="{Binding StopScanCommand}" />
+                            <Button Margin="2" Content="{Binding Selectedrange.Count}" ContentStringFormat="Add {0}"  Command="{Binding AddRangeCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"/>
+                        </ToolBarOverflowPanel>
+                        <Grid Margin="2">
+                            <ProgressBar Value="{Binding Rangeprogress}" Maximum="100" Height="20"/>
+                            <TextBlock Text="{Binding Rangeinfo}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                        <Slider Margin="5" Value="{Binding TargetHost.Seconds}" Minimum="0" Maximum="300" IsSnapToTickEnabled="True" TickFrequency="10"/>
+                    </ToolBarPanel>
+                </materialDesign:Card>
+                <materialDesign:Card Margin="2" Grid.Row="3" VerticalAlignment="Stretch" VerticalContentAlignment="Center">
+                    <ListView Name="RangeList"  Height="300" SelectionMode="Multiple" ItemsSource="{Binding Rangehosts}" ItemTemplate="{StaticResource RangeListTemplate}" ItemContainerStyle="{DynamicResource RangeListItem}" BorderThickness="0" HorizontalContentAlignment="Stretch" VerticalAlignment="Stretch">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="SelectionChanged">
+                                <i:ChangePropertyAction TargetObject="{Binding Mode=OneWay}" PropertyName="SelectedItems" Value="{Binding Path=SelectedItems, ElementName=RangeList}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </ListView>                    
+                </materialDesign:Card>
+            </ToolBarPanel>
+        </Controls:MetroTabItem>
+    </Controls:MetroAnimatedTabControl>
+    
+</UserControl>

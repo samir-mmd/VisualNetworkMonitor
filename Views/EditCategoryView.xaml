@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="VNM2020.Views.EditCategoryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VNM2020.Views"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Background="{DynamicResource MaterialDesignPaper}"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="../Resources/DataTemplates.xaml"/>
+    </UserControl.Resources>
+    <ToolBarPanel Width="200">
+        <TextBox Margin="5" Text="{Binding TargetCategory.Name,UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Category Name"/>
+        <TextBlock Text="Select Icon" Margin="5,5,5,0" Foreground="White"/>
+        <ComboBox ItemsSource="{Binding IconList}" SelectedItem="{Binding TargetCategory.IconPath}" Margin="5,0,5,5" Foreground="White" />
+        <TextBlock Text="Icon Opacity" Margin="5,5,5,0" Foreground="White"/>
+        <Slider Value="{Binding TargetCategory.IconOpacity}" Minimum="0" Maximum="1" TickFrequency="0.1"/>
+        <Button  Margin="5" Style="{StaticResource AttentionButtonStyle}" Content="Remove" Command="{Binding RemoveCategoryCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"/>        
+    </ToolBarPanel>
+</UserControl>

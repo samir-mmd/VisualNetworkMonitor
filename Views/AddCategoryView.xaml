@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="VNM2020.Views.AddCategoryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VNM2020.Views"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Background="{DynamicResource MaterialDesignPaper}"
+             mc:Ignorable="d" >
+    <UserControl.Resources>
+        <ResourceDictionary Source="../Resources/DataTemplates.xaml"/>
+    </UserControl.Resources>
+    <ToolBarPanel>
+        <TextBox Width="150" Margin="10" Text="{Binding NewCategoryName,UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Category Name"/>
+        <Button Margin="10" Content="Add" Command="{Binding AddCategoryCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}" />
+    </ToolBarPanel>
+</UserControl>

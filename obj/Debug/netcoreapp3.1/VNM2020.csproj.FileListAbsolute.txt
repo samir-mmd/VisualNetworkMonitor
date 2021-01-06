@@ -1,0 +1,211 @@
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\VNM2020.exe
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\VNM2020.deps.json
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\VNM2020.runtimeconfig.json
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\VNM2020.runtimeconfig.dev.json
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\VNM2020.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\VNM2020.pdb
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.csprojAssemblyReference.cache
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\VNM2020_MarkupCompile.cache
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\VNM2020_MarkupCompile.lref
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.g.resources
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.AssemblyInfoInputs.cache
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.AssemblyInfo.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.pdb
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.genruntimeconfig.cache
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\Views\MainWindow.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\Views\MainWindow.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.csproj.CopyComplete
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\Resources\DataTemplates.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\Views\FirstScreenView.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\Views\FirstScreenView.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\ControlzEx.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\MahApps.Metro.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.csproj.CoreCompileInputs.cache
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\ControlzEx.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\MahApps.Metro.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.csprojAssemblyReference.cache
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\FirstScreenView.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\MainWindow.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Resources\DataTemplates.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\FirstScreenView.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\MainWindow.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.AssemblyInfoInputs.cache
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.AssemblyInfo.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.csproj.CoreCompileInputs.cache
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.csproj.CopyComplete
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.genruntimeconfig.cache
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\DialogWindow.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\DialogWindow.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\AddHostView.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\AddHostView.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\AddCategoryView.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\AddCategoryView.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Extras.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Platform.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.Windows.Interactivity.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\EditCategoryView.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\EditCategoryView.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.exe
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.deps.json
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.runtimeconfig.json
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.runtimeconfig.dev.json
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.pdb
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\ControlzEx.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\MahApps.Metro.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.Windows.Interactivity.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Mugamat\Desktop\VNM2020\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\AddCategoryView.g.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\AddHostView.g.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\DialogWindow.g.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\EditCategoryView.g.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\FirstScreenView.g.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\LogScreenView.g.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\LogScreenWindow.g.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\MainWindow.g.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\SettingsView.g.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Visual Network Monitor_MarkupCompile.cache
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Visual Network Monitor_MarkupCompile.lref
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Resources\DataTemplates.baml
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\AddCategoryView.baml
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\AddHostView.baml
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\DialogWindow.baml
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\EditCategoryView.baml
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\FirstScreenView.baml
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\LogScreenView.baml
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\LogScreenWindow.baml
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\MainWindow.baml
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\SettingsView.baml
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Visual Network Monitor.g.resources
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.AssemblyInfoInputs.cache
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.AssemblyInfo.cs
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.csproj.CopyComplete
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Visual Network Monitor.dll
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Visual Network Monitor.pdb
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.genruntimeconfig.cache
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.csproj.CoreCompileInputs.cache
+C:\Users\Mugamat\Desktop\VNM2020\obj\Debug\netcoreapp3.1\VNM2020.csprojAssemblyReference.cache
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.exe
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.deps.json
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.runtimeconfig.json
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.runtimeconfig.dev.json
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\bin\Debug\netcoreapp3.1\Visual Network Monitor.pdb
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\LogScreenView.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\LogScreenWindow.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\SettingsView.g.cs
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Visual Network Monitor_MarkupCompile.cache
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Visual Network Monitor_MarkupCompile.lref
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\LogScreenView.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\LogScreenWindow.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Views\SettingsView.baml
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Visual Network Monitor.g.resources
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Visual Network Monitor.dll
+C:\Users\SamirMammadovWS\Desktop\VNM2020\obj\Debug\netcoreapp3.1\Visual Network Monitor.pdb
