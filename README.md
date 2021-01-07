@@ -9,9 +9,14 @@
 * Tested with more than 500 hosts one time.
 
 ## Overview:
+
 ![Overview](VNMPics/FullScreen.jpg)
 
 * To add new category press "+" button on the host list on left side
+
+![Overview](VNMPics/ActionsGraph.jpg)
+## Test
+
 * To edit category name or icon or remove it hit "edit" button on prefered category
   * To add new icons to icon list move prefered images to /Icons folder and restart the program
 * To add new host press "+" button on prefered category
@@ -20,6 +25,7 @@
      * Enter needed range, start scan and then select prefered hosts and hit "Add" button
 * To remove or edit host hit on expander on the right side of the hosts list
 * Move mouse on live graph to check last actions
+
 
 ![Overview](VNMPics/ActionsGraph.jpg)
 
