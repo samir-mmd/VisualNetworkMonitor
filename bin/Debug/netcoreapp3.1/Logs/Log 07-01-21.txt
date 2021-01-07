@@ -1,0 +1,155 @@
+07.01.21 09:25:57.289 Online Unknown Host Back online!
+07.01.21 09:26:00.198 Done Mail Engine Mail 07-Jan-21 09:25:57 Unknown Host : 192.168.10.25 is back online sent to visualnetworkmonitor@gmail.com
+07.01.21 09:26:03.935 Online smtp.gmail.com Back online!
+07.01.21 09:26:05.613 Done Mail Engine Mail 07-Jan-21 09:26:03 smtp.gmail.com : smtp.gmail.com is back online sent to visualnetworkmonitor@gmail.com
+07.01.21 09:26:24.201 Done CCTV Updated
+07.01.21 09:26:36.770 Offline NPI22D472 Host has left the party!
+07.01.21 09:26:38.363 Done Mail Engine Mail 07-Jan-21 09:26:36 NPI22D472 : 192.168.10.44 is offline sent to visualnetworkmonitor@gmail.com
+07.01.21 09:26:59.347 Done Web Updated
+07.01.21 09:27:12.141 Done New Category Added
+07.01.21 09:27:43.786 Online Unknown Host Back online!
+07.01.21 09:27:44.751 Offline smtp.gmail.com Host has left the party!
+07.01.21 09:27:45.309 Done Mail Engine Mail 07-Jan-21 09:27:43 Unknown Host : 192.168.10.40 is back online sent to visualnetworkmonitor@gmail.com
+07.01.21 09:27:46.147 Done Mail Engine Mail 07-Jan-21 09:27:44 smtp.gmail.com : smtp.gmail.com is offline sent to visualnetworkmonitor@gmail.com
+07.01.21 09:28:44.850 Online smtp.gmail.com Back online!
+07.01.21 09:28:46.573 Done Mail Engine Mail 07-Jan-21 09:28:44 smtp.gmail.com : smtp.gmail.com is back online sent to visualnetworkmonitor@gmail.com
+07.01.21 09:29:15.074 Offline Unknown Host Host has left the party!
+07.01.21 09:29:16.442 Done Mail Engine Mail 07-Jan-21 09:29:15 Unknown Host : 192.168.10.40 is offline sent to visualnetworkmonitor@gmail.com
+07.01.21 09:29:25.211 Online Unknown Host Back online!
+07.01.21 09:29:26.626 Done Mail Engine Mail 07-Jan-21 09:29:25 Unknown Host : 192.168.10.40 is back online sent to visualnetworkmonitor@gmail.com
+07.01.21 09:30:35.252 Offline Unknown Host Host has left the party!
+07.01.21 09:30:36.639 Done Mail Engine Mail 07-Jan-21 09:30:35 Unknown Host : 192.168.10.40 is offline sent to visualnetworkmonitor@gmail.com
+07.01.21 09:30:43.237 Done local Added
+07.01.21 09:31:06.301 Done Unknown Host Host is known as RECEPTION01.bac.local on DNS
+07.01.21 09:31:06.302 Done Unknown Host Host is known as PDC.bac.local on DNS
+07.01.21 09:31:06.710 Done Unknown Host Host is known as Qserver on DNS
+07.01.21 09:31:10.753 Exception Unknown Host No such host is known.
+07.01.21 09:31:10.754 Exception Unknown Host No such host is known.
+07.01.21 09:31:10.763 Exception Unknown Host No such host is known.
+07.01.21 09:31:10.777 Exception Unknown Host No such host is known.
+07.01.21 09:31:10.787 Exception Unknown Host No such host is known.
+07.01.21 09:31:14.869 Done New Category Updated
+07.01.21 09:31:19.109 Done local Removed with 1 actions
+07.01.21 09:37:35.529 Online Unknown Host Back online!
+07.01.21 09:37:37.181 Done Mail Engine Mail 07-Jan-21 09:37:35 Unknown Host : 192.168.10.40 is back online sent to visualnetworkmonitor@gmail.com
+07.01.21 09:38:25.758 Offline Unknown Host Host has left the party!
+07.01.21 09:38:27.193 Done Mail Engine Mail 07-Jan-21 09:38:25 Unknown Host : 192.168.10.40 is offline sent to visualnetworkmonitor@gmail.com
+07.01.21 09:39:41.715 Done Core Settings saved
+07.01.21 09:39:42.393 Done Unknown Host Cleared 83 actions
+07.01.21 09:39:42.564 Done Reception_B Cleared 82 actions
+07.01.21 09:39:42.580 Done Unknown Host Cleared 82 actions
+07.01.21 09:39:42.594 Done Q2.bac.local Cleared 82 actions
+07.01.21 09:39:42.607 Done SERVERBK Cleared 82 actions
+07.01.21 09:39:42.622 Done Q1.bac.local Cleared 82 actions
+07.01.21 09:39:42.637 Done Unknown Host Cleared 82 actions
+07.01.21 09:39:42.652 Done KARTING_RESEPTI Cleared 83 actions
+07.01.21 09:39:42.667 Done Unknown Host Cleared 83 actions
+07.01.21 09:39:42.682 Done Unknown Host Cleared 82 actions
+07.01.21 09:39:42.695 Done Monitor Cleared 83 actions
+07.01.21 09:39:42.709 Done KARTINGSERVER.local Cleared 82 actions
+07.01.21 09:39:42.735 Done CallCenter Cleared 83 actions
+07.01.21 09:39:42.905 Done NPI22D472 Cleared 82 actions
+07.01.21 09:39:42.920 Done Unknown Host Cleared 82 actions
+07.01.21 09:39:42.933 Done EPSONFF3E39 Cleared 83 actions
+07.01.21 09:39:42.947 Done Unknown Host Cleared 82 actions
+07.01.21 09:39:42.960 Done Qserver Cleared 83 actions
+07.01.21 09:39:42.974 Done Unknown Host Cleared 83 actions
+07.01.21 09:39:42.988 Done VMWARE.bac.local Cleared 82 actions
+07.01.21 09:39:43.001 Done Unknown Host Cleared 82 actions
+07.01.21 09:39:43.014 Done ping Cleared 82 actions
+07.01.21 09:39:43.027 Done Unknown Host Cleared 83 actions
+07.01.21 09:39:43.042 Done Unknown Host Cleared 82 actions
+07.01.21 09:39:43.055 Done DESKTOP-7R6CUAE.bac.local Cleared 82 actions
+07.01.21 09:39:43.069 Done Unknown Host Cleared 83 actions
+07.01.21 09:39:43.081 Done Unknown Host Cleared 83 actions
+07.01.21 09:39:43.095 Done Unknown Host Cleared 83 actions
+07.01.21 09:39:43.107 Done Unknown Host Cleared 83 actions
+07.01.21 09:39:43.122 Done Unknown Host Cleared 82 actions
+07.01.21 09:39:43.135 Done RECEPTION03.bac.local Cleared 82 actions
+07.01.21 09:39:43.148 Done RAUF_KHALILOV.bac.local Cleared 82 actions
+07.01.21 09:39:43.161 Done Unknown Host Cleared 82 actions
+07.01.21 09:39:43.173 Done Unknown Host Cleared 83 actions
+07.01.21 09:39:43.187 Done smtp.gmail.com Cleared 82 actions
+07.01.21 09:39:43.218 Done MyPhone Cleared 82 actions
+07.01.21 09:39:43.226 Done Reception Cam1 Cleared 0 actions
+07.01.21 09:39:43.234 Done Camera Server Cleared 0 actions
+07.01.21 09:39:43.242 Done Hall Cleared 0 actions
+07.01.21 09:39:43.250 Done Reception Cam2 Cleared 0 actions
+07.01.21 09:39:43.271 Done Stairs Cleared 32 actions
+07.01.21 09:39:43.292 Done Office Cam1 Cleared 32 actions
+07.01.21 09:39:43.300 Done Office Cam2 Cleared 0 actions
+07.01.21 09:40:25.762 Offline smtp.gmail.com Host has left the party!
+07.01.21 09:40:27.648 Done Mail Engine Mail 07-Jan-21 09:40:25 smtp.gmail.com : smtp.gmail.com is offline sent to visualnetworkmonitor@gmail.com
+07.01.21 09:40:30.082 Done Unknown Host Host is known as RECEPTION01.bac.local on DNS
+07.01.21 09:40:30.107 Done Unknown Host Host is known as PDC.bac.local on DNS
+07.01.21 09:40:30.541 Done Unknown Host Host is known as Qserver on DNS
+07.01.21 09:40:34.585 Exception Unknown Host No such host is known.
+07.01.21 09:40:34.614 Exception Unknown Host No such host is known.
+07.01.21 09:40:34.615 Exception Unknown Host No such host is known.
+07.01.21 09:40:34.615 Exception Unknown Host No such host is known.
+07.01.21 09:40:34.617 Exception Unknown Host No such host is known.
+07.01.21 09:40:37.962 Done RECEPTION01.bac.local Added
+07.01.21 09:40:37.986 Done PDC.bac.local Added
+07.01.21 09:40:37.999 Done Qserver Added
+07.01.21 09:40:38.017 Done Unknown Host Added
+07.01.21 09:41:15.905 Online smtp.gmail.com Back online!
+07.01.21 09:41:17.328 Done Mail Engine Mail 07-Jan-21 09:41:15 smtp.gmail.com : smtp.gmail.com is back online sent to visualnetworkmonitor@gmail.com
+07.01.21 09:41:46.046 Done Web Updated
+07.01.21 09:41:55.751 Offline smtp.gmail.com Host has left the party!
+07.01.21 09:41:57.342 Done Mail Engine Mail 07-Jan-21 09:41:55 smtp.gmail.com : smtp.gmail.com is offline sent to visualnetworkmonitor@gmail.com
+07.01.21 09:42:15.873 Online smtp.gmail.com Back online!
+07.01.21 09:42:17.309 Done Mail Engine Mail 07-Jan-21 09:42:15 smtp.gmail.com : smtp.gmail.com is back online sent to visualnetworkmonitor@gmail.com
+07.01.21 09:42:20.569 Done Web Updated
+07.01.21 09:42:23.580 Done Web Updated
+07.01.21 09:43:05.753 Offline smtp.gmail.com Host has left the party!
+07.01.21 09:43:07.387 Done Mail Engine Mail 07-Jan-21 09:43:05 smtp.gmail.com : smtp.gmail.com is offline sent to visualnetworkmonitor@gmail.com
+07.01.21 09:44:05.191 Done Core Settings saved
+07.01.21 09:44:05.923 Done Unknown Host Cleared 25 actions
+07.01.21 09:44:06.021 Done Reception_B Cleared 25 actions
+07.01.21 09:44:06.110 Online smtp.gmail.com Back online!
+07.01.21 09:44:06.496 Done Unknown Host Cleared 26 actions
+07.01.21 09:44:06.520 Done Q2.bac.local Cleared 26 actions
+07.01.21 09:44:06.543 Done SERVERBK Cleared 25 actions
+07.01.21 09:44:06.567 Done Q1.bac.local Cleared 26 actions
+07.01.21 09:44:06.592 Done Unknown Host Cleared 26 actions
+07.01.21 09:44:06.617 Done KARTING_RESEPTI Cleared 25 actions
+07.01.21 09:44:06.643 Done Unknown Host Cleared 26 actions
+07.01.21 09:44:06.668 Done Unknown Host Cleared 26 actions
+07.01.21 09:44:06.692 Done Monitor Cleared 26 actions
+07.01.21 09:44:06.719 Done KARTINGSERVER.local Cleared 25 actions
+07.01.21 09:44:06.744 Done CallCenter Cleared 25 actions
+07.01.21 09:44:06.774 Done NPI22D472 Cleared 25 actions
+07.01.21 09:44:06.797 Done Unknown Host Cleared 26 actions
+07.01.21 09:44:06.821 Done EPSONFF3E39 Cleared 26 actions
+07.01.21 09:44:06.846 Done Unknown Host Cleared 25 actions
+07.01.21 09:44:06.869 Done Qserver Cleared 26 actions
+07.01.21 09:44:06.892 Done Unknown Host Cleared 25 actions
+07.01.21 09:44:06.904 Done VMWARE.bac.local Cleared 26 actions
+07.01.21 09:44:07.078 Done Unknown Host Cleared 25 actions
+07.01.21 09:44:07.102 Done ping Cleared 26 actions
+07.01.21 09:44:07.126 Done Unknown Host Cleared 26 actions
+07.01.21 09:44:07.149 Done Unknown Host Cleared 26 actions
+07.01.21 09:44:07.172 Done DESKTOP-7R6CUAE.bac.local Cleared 26 actions
+07.01.21 09:44:07.195 Done Unknown Host Cleared 26 actions
+07.01.21 09:44:07.219 Done Unknown Host Cleared 25 actions
+07.01.21 09:44:07.242 Done Unknown Host Cleared 26 actions
+07.01.21 09:44:07.273 Done Unknown Host Cleared 25 actions
+07.01.21 09:44:07.297 Done Unknown Host Cleared 26 actions
+07.01.21 09:44:07.321 Done RECEPTION03.bac.local Cleared 26 actions
+07.01.21 09:44:07.345 Done RAUF_KHALILOV.bac.local Cleared 25 actions
+07.01.21 09:44:07.368 Done Unknown Host Cleared 25 actions
+07.01.21 09:44:07.391 Done Unknown Host Cleared 25 actions
+07.01.21 09:44:07.415 Done smtp.gmail.com Cleared 26 actions
+07.01.21 09:44:07.437 Done MyPhone Cleared 25 actions
+07.01.21 09:44:07.445 Done Reception Cam1 Cleared 0 actions
+07.01.21 09:44:07.453 Done Camera Server Cleared 0 actions
+07.01.21 09:44:07.462 Done Hall Cleared 0 actions
+07.01.21 09:44:07.470 Done Reception Cam2 Cleared 0 actions
+07.01.21 09:44:07.494 Done Stairs Cleared 25 actions
+07.01.21 09:44:07.515 Done Office Cam1 Cleared 26 actions
+07.01.21 09:44:07.522 Done Mail Engine Mail 07-Jan-21 09:44:06 smtp.gmail.com : smtp.gmail.com is back online sent to visualnetworkmonitor@gmail.com
+07.01.21 09:44:07.523 Done Office Cam2 Cleared 0 actions
+07.01.21 09:44:07.535 Done RECEPTION01.bac.local Cleared 0 actions
+07.01.21 09:44:07.543 Done PDC.bac.local Cleared 0 actions
+07.01.21 09:44:07.551 Done Qserver Cleared 0 actions
+07.01.21 09:44:07.559 Done Unknown Host Cleared 0 actions
