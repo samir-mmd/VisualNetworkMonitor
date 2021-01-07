@@ -1,6 +1,8 @@
 # **Visual Network Monitor**
 ### Keep an eye on your network!
 
+[Download Portable Build](bin/Debug/VNMPortable.rar)
+
 #### Functionality:
 * Easy Networking administrative tool to track over ICMP and get notifications about availability and changes of network hosts. 
 * Includes interactive map function, which allows you to upload your custom map and place visual representation of hosts on it.
