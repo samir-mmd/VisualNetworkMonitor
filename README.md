@@ -9,17 +9,26 @@
 * Tested with more than 500 hosts one time.
 
 ## Overview:
+
 ![Overview](VNMPics/FullScreen.jpg)
 
 * To add new category press "+" button on the host list on left side
+
+![Overview](VNMPics/NewCategory.gif)
+
 * To edit category name or icon or remove it hit "edit" button on prefered category
   * To add new icons to icon list move prefered images to /Icons folder and restart the program
 * To add new host press "+" button on prefered category
    * To add single host enter address, name and choose prefered update delay
    * To add scan and add range of hosts hit "Add Range" tab in "New Host" window
      * Enter needed range, start scan and then select prefered hosts and hit "Add" button
+     
+![Overview](VNMPics/AddRange.gif)
+
 * To remove or edit host hit on expander on the right side of the hosts list
 * Move mouse on live graph to check last actions
+
+![Overview](VNMPics/HostInfo.gif)
 
 ![Overview](VNMPics/ActionsGraph.jpg)
 
@@ -30,6 +39,8 @@
    * To reset parent host hold "ctrl" and hit on selected host with mouse left button   
 * You can control map with mouse
   * Hold "Alt" while scrolling on map to change opacity
+
+![Overview](VNMPics/HostMove.gif)
 
 ![Overview](VNMPics/HostsOnMap.jpg)
 
